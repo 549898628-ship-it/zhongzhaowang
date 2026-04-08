@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>机构全球开户流程与 CRM 审核系统 | 案例</title>
+    <meta name="description" content="机构全球开户流程与 CRM 审核系统详细案例。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="../index.html">
+          <span class="brand-mark">W</span>
+          <span class="brand-text">Wang Zhongzhao</span>
+        </a>
+        <div class="header-actions">
+          <div class="utility-nav">
+            <div class="lang-switch">
+              <a class="active" href="./global-account-opening.html">中</a>
+              <a href="./global-account-opening-en.html">EN</a>
+            </div>
+            <a class="utility-link" href="../index.html">返回首页</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section subpage-hero">
+          <div class="subpage-card" data-reveal>
+            <a class="back-link" href="../index.html#cases">返回案例列表</a>
+            <p class="eyebrow">Case Study 01</p>
+            <h1>机构全球开户流程与 CRM 审核系统</h1>
+            <p>
+              这是一个典型的双边链路重构项目。问题不只在提交端，也不只在审核端，而是两侧没有被当成同一条业务链路来设计。
+            </p>
+            <div class="subpage-actions">
+              <a class="button button-secondary" href="../resume.html">查看简历页</a>
+              <a class="button button-secondary" href="./ka-portal.html">下一个案例</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section article-layout">
+          <aside class="article-sidebar" data-reveal>
+            <h3>项目摘要</h3>
+            <ul>
+              <li>角色：主设计师</li>
+              <li>场景：机构开户提交与审核工作台</li>
+              <li>地区：香港、新加坡、澳洲、美国</li>
+              <li>结果：通过率 62% → 89%</li>
+            </ul>
+          </aside>
+
+          <div class="article-main">
+            <article class="article-section" data-reveal>
+              <h2>项目背景</h2>
+              <p>
+                该项目面向金融机构柜台与审核人员，支持跨地区开户与审核作业。业务规则复杂，资料量大，不同地区市场在合规要求、表单字段、证明材料与审核口径上均有差异。
+              </p>
+              <p>
+                在旧流程中，提交端和审核端被拆成两个独立问题处理，导致大量错误在提交后才被发现，返工和沟通成本被放大。
+              </p>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>我定义的核心问题</h2>
+              <ul class="bullet-list">
+                <li>错误发现时机过晚，导致首次提交通过率偏低。</li>
+                <li>审核路径长、信息分散，审核人员需要手动拼接上下文。</li>
+                <li>提交端与审核端缺少统一设计视角，问题在不同角色间反复转移。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>关键动作</h2>
+              <ul class="bullet-list">
+                <li>梳理服务蓝图，重建从提交、校验、审核到驳回补充的完整链路视图。</li>
+                <li>重构提交流程，引入预校验、分层错误提示与补充引导，减少无效提交。</li>
+                <li>围绕优先级、异常识别和信息聚合优化审核工作台，缩短审核路径。</li>
+                <li>把“提交是否正确”和“审核是否高效”作为同一个系统目标来校验设计方案。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>Figma 中明确呈现的服务蓝图</h2>
+              <ul class="bullet-list">
+                <li>用户动作：理解开户要求、填写信息、提交申请、补充信息、接收结果。</li>
+                <li>前台触点：开户介绍、表单与上传、错误反馈、补件清单、结果页。</li>
+                <li>后台动作：规则分流、字段校验、提交检查、审核流程、结果传递。</li>
+                <li>支持系统：规则库、文件系统、校验引擎、CRM 审核台、通知系统。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>旧流程与新流程的差异</h2>
+              <ul class="bullet-list">
+                <li>旧流程问题：规则分散、表单过长、错误发现滞后、沟通效率低、结果解释弱。</li>
+                <li>新流程策略：准备环节收敛、分步填写、实时校验、补件引导、协同审核。</li>
+                <li>提交端目标：把错误尽量前移，不再让问题只在审核阶段集中暴露。</li>
+                <li>审核端目标：通过分层队列、任务组织和信息聚合，提升判断效率。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>审核工作台优化重点</h2>
+              <ul class="bullet-list">
+                <li>Submission Endpoint：让提交结果和字段映射更清晰。</li>
+                <li>Review Endpoint：通过分层队列组织任务，提高审核优先级判断效率。</li>
+                <li>Info Aggregation：围绕字段信息聚合，减少审核人员来回比对成本。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>我的判断依据</h2>
+              <ul class="evidence-list">
+                <li>如果错误总在后端审核环节暴露，说明前端提交信息结构和提示机制没有承担应有责任。</li>
+                <li>如果审核端需要频繁切换信息视角，说明提交端提供的上下文质量不足，系统设计存在断层。</li>
+                <li>如果返工成本主要发生在角色切换之后，就不能再用单点页面优化来解决问题。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>项目结果</h2>
+              <ul class="bullet-list">
+                <li>首次提交通过率从 62% 提升至 89%。</li>
+                <li>驳回率下降 40%。</li>
+                <li>审核效率提升 35%。</li>
+              </ul>
+              <p>
+                更重要的是，团队对“提交端与审核端一体化设计”的共识被建立下来，这使后续版本迭代不再反复回到局部修补。
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>This case page is intended for direct sharing and interview walkthroughs.</p>
+      </footer>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
