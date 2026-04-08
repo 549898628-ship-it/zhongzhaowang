@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>设计资产沉淀 | 页面</title>
+    <meta name="description" content="设计资产沉淀与组件库规范页面。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="../index.html">
+          <span class="brand-mark">W</span>
+          <span class="brand-text">Wang Zhongzhao</span>
+        </a>
+        <div class="header-actions">
+          <div class="utility-nav">
+            <div class="lang-switch">
+              <a class="active" href="./design-assets.html">中</a>
+              <a href="./design-assets-en.html">EN</a>
+            </div>
+            <a class="utility-link" href="../index.html">返回首页</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section subpage-hero">
+          <div class="subpage-card" data-reveal>
+            <a class="back-link" href="../index.html#system-work">返回沉淀板块</a>
+            <p class="eyebrow">System 01</p>
+            <h1>设计资产沉淀</h1>
+            <p>这部分来自你 Figma 中的“组件库规范”页。虽然不少文案仍是组件占位词，但已经足以说明你在状态系统、导航结构、消息模块和基础组件上的沉淀方向。</p>
+          </div>
+        </section>
+
+        <section class="section article-layout">
+          <aside class="article-sidebar" data-reveal>
+            <h3>页面摘要</h3>
+            <ul>
+              <li>主题：组件库规范</li>
+              <li>对象：按钮、文本、状态、导航、消息</li>
+              <li>目标：高频业务能力复用</li>
+            </ul>
+          </aside>
+
+          <div class="article-main">
+            <article class="article-section" data-reveal>
+              <h2>状态系统</h2>
+              <ul class="bullet-list">
+                <li>Figma 中明确出现了 `Success`、`Processing`、`Error`、`Warning`、`Invalid`、`Pending` 等状态。</li>
+                <li>这说明组件库并不只覆盖静态样式，而是开始把业务状态映射到统一视觉语义。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>基础组件覆盖</h2>
+              <ul class="bullet-list">
+                <li>页面里出现 `Checkbox`、`Button`、`Text` 等基础控件集合。</li>
+                <li>同时包含 `NEW`、`HOT`、`3`、`30`、`99+` 等标签和计数元素，说明规范覆盖了信息提示和运营类场景。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>导航与结构</h2>
+              <ul class="bullet-list">
+                <li>页面中出现 `Overview`、`Trade`、`Assets History`、`Orders`、`Statements`、`Review`、`Setting` 等导航区块。</li>
+                <li>这反映出组件库沉淀已和真实业务结构结合，而不是停留在纯视觉原子级别。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>反馈与消息模块</h2>
+              <ul class="bullet-list">
+                <li>Figma 中出现 `Success message`、`Error message`、`Warning message`、`Normal message` 等消息模块，并配有按钮。</li>
+                <li>这类模块说明你在沉淀的不只是页面片段，而是“状态 + 行动”的反馈闭环。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>我的解读</h2>
+              <p>从这些资产可以推断，你的设计沉淀路径是先把高频业务元素标准化，再把状态、导航和反馈模块接入真实业务场景。这样做的价值不只是视觉统一，而是减少反复设计和反复实现的成本。</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>This page summarizes reusable design assets and component-library thinking.</p>
+      </footer>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
