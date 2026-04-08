@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Asset Library | Page</title>
+    <meta name="description" content="Design asset library and component-system summary." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="../en.html">
+          <span class="brand-mark">W</span>
+          <span class="brand-text">Wang Zhongzhao</span>
+        </a>
+        <div class="header-actions">
+          <div class="utility-nav">
+            <div class="lang-switch">
+              <a href="./design-assets.html">中</a>
+              <a class="active" href="./design-assets-en.html">EN</a>
+            </div>
+            <a class="utility-link" href="../en.html">Back Home</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section subpage-hero">
+          <div class="subpage-card" data-reveal>
+            <a class="back-link" href="../en.html#system-work">Back to System Work</a>
+            <p class="eyebrow">System 01</p>
+            <h1>Design asset library</h1>
+            <p>This page is based on the “component library spec” frames in your Figma. Even though some labels are placeholder-like, they clearly show the structure and scope of your design-asset thinking.</p>
+          </div>
+        </section>
+
+        <section class="section article-layout">
+          <aside class="article-sidebar" data-reveal>
+            <h3>Snapshot</h3>
+            <ul>
+              <li>Theme: component-library spec</li>
+              <li>Scope: buttons, text, states, navigation, messages</li>
+              <li>Goal: reusable high-frequency patterns</li>
+            </ul>
+          </aside>
+
+          <div class="article-main">
+            <article class="article-section" data-reveal>
+              <h2>Status system</h2>
+              <ul class="bullet-list">
+                <li>The Figma frame explicitly includes `Success`, `Processing`, `Error`, `Warning`, `Invalid`, and `Pending`.</li>
+                <li>This suggests the library was designed to carry business state semantics, not just visual styling.</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>Foundation coverage</h2>
+              <ul class="bullet-list">
+                <li>The page includes `Checkbox`, `Button`, and `Text` groups as foundational UI building blocks.</li>
+                <li>It also includes tags and counters such as `NEW`, `HOT`, `3`, `30`, and `99+`, which indicates support for signals and operational information.</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>Navigation structure</h2>
+              <ul class="bullet-list">
+                <li>The frame includes navigation labels such as `Overview`, `Trade`, `Assets History`, `Orders`, `Statements`, `Review`, and `Setting`.</li>
+                <li>That means the asset system is tied to real product architecture rather than only abstract UI tokens.</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>Feedback modules</h2>
+              <ul class="bullet-list">
+                <li>The frame includes `Success message`, `Error message`, `Warning message`, and `Normal message`, each paired with a button.</li>
+                <li>This suggests a reusable feedback pattern that connects state expression with user action.</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>My reading</h2>
+              <p>The overall pattern suggests a design-asset strategy that standardizes high-frequency structures first, then extends into state semantics, navigation, and message handling. The value is not only visual consistency but also reduced design and implementation repetition.</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>This page summarizes reusable design assets and component-library thinking.</p>
+      </footer>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
