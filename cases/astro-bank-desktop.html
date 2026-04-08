@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>天星银行桌面端重构 | 案例</title>
+    <meta name="description" content="天星银行桌面端重构详细案例。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="../index.html">
+          <span class="brand-mark">W</span>
+          <span class="brand-text">Wang Zhongzhao</span>
+        </a>
+        <div class="header-actions">
+          <div class="utility-nav">
+            <div class="lang-switch">
+              <a class="active" href="./astro-bank-desktop.html">中</a>
+              <a href="./astro-bank-desktop-en.html">EN</a>
+            </div>
+            <a class="utility-link" href="../index.html">返回首页</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section subpage-hero">
+          <div class="subpage-card" data-reveal>
+            <a class="back-link" href="../index.html#cases">返回案例列表</a>
+            <p class="eyebrow">Case Study 04</p>
+            <h1>天星银行桌面端重构</h1>
+            <p>这个项目的重点不是做一个更漂亮的桌面端，而是让原本偏简单银行任务的框架，能够承接证券投资和多任务操作。</p>
+            <div class="subpage-actions">
+              <a class="button button-secondary" href="../resume.html">查看简历页</a>
+              <a class="button button-secondary" href="./web3-platform.html">上一个案例</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section article-layout">
+          <aside class="article-sidebar" data-reveal>
+            <h3>项目摘要</h3>
+            <ul>
+              <li>角色：项目主设计师之一</li>
+              <li>范围：主框架搭建 + 主界面交互</li>
+              <li>重点：桌面投资场景、多任务操作、跨端统一</li>
+              <li>结果：研发实现效率提升 70%</li>
+            </ul>
+          </aside>
+
+          <div class="article-main">
+            <article class="article-section" data-reveal>
+              <h2>项目背景</h2>
+              <p>原有桌面框架偏向简单银行业务，难以承接高频投资用户的复杂操作场景。随着证券投资能力引入，原有层级和切换成本开始变得过高。</p>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>我的角色与负责内容</h2>
+              <ul class="bullet-list">
+                <li>项目主设计师之一，兼顾主框架搭建和主界面交互。</li>
+                <li>主导全链路体验重构，并推动跨端体验统一策略。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>为什么要重构桌面端</h2>
+              <ul class="bullet-list">
+                <li>原框架适配的是简单银行任务，面对证券投资与多任务操作时，层级与切换成本都偏高。</li>
+                <li>需要把证券业务从单点能力补充升级为可支撑复杂投资任务的桌面产品结构。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>关键设计判断</h2>
+              <ul class="bullet-list">
+                <li>投资能力的补充升级：证券业务解耦成更独立的应用能力，同时复用代码框架和设计基础框架，降低维护成本。</li>
+                <li>统一体验语言：跨端统一不是界面一致，而是用户在不同端上都能理解相同的规则与操作反馈。</li>
+                <li>桌面价值不只是“多开窗口”，而是支持更高密度的信息并行和更连续的任务处理。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>项目结果</h2>
+              <p>Figma 页面明确写到，该项目通过移动端与桌面端体验语言的收敛和规范统一，使研发实现效率提升 70%。这类结果说明重构带来的价值不仅是界面更新，而是系统复用与协作效率提升。</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>This case page is intended for direct sharing and interview walkthroughs.</p>
+      </footer>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
