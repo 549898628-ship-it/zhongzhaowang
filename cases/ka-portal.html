@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KA Portal 机构资产管理平台 | 案例</title>
+    <meta name="description" content="KA Portal 机构资产管理平台详细案例。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="../index.html">
+          <span class="brand-mark">W</span>
+          <span class="brand-text">Wang Zhongzhao</span>
+        </a>
+        <div class="header-actions">
+          <div class="utility-nav">
+            <div class="lang-switch">
+              <a class="active" href="./ka-portal.html">中</a>
+              <a href="./ka-portal-en.html">EN</a>
+            </div>
+            <a class="utility-link" href="../index.html">返回首页</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section subpage-hero">
+          <div class="subpage-card" data-reveal>
+            <a class="back-link" href="../index.html#cases">返回案例列表</a>
+            <p class="eyebrow">Case Study 02</p>
+            <h1>KA Portal 机构资产管理平台</h1>
+            <p>
+              这是一个更偏平台型产品架构的项目。核心不在单一页面优化，而在多模块、多角色、多场景系统中建立统一体验结构。
+            </p>
+            <div class="subpage-actions">
+              <a class="button button-secondary" href="../resume.html">查看简历页</a>
+              <a class="button button-secondary" href="./global-account-opening.html">上一个案例</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section article-layout">
+          <aside class="article-sidebar" data-reveal>
+            <h3>项目摘要</h3>
+            <ul>
+              <li>角色：体验架构负责人</li>
+              <li>类型：大型 B 端平台</li>
+              <li>范围：8 大模块，200+ 页面</li>
+              <li>结果：85% 组件复用率</li>
+            </ul>
+          </aside>
+
+          <div class="article-main">
+            <article class="article-section" data-reveal>
+              <h2>项目背景</h2>
+              <p>
+                KA Portal 面向持牌金融机构，覆盖证券、资管、交易、报表、任务等多个核心业务模块。服务对象专业度高、任务跨度大，平台需要同时满足效率、一致性与复杂度管理。
+              </p>
+              <p>
+                随着模块扩张，页面之间的结构差异逐渐放大，用户学习成本、研发实现成本和后续维护成本都开始上升。
+              </p>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>我定义的核心问题</h2>
+              <ul class="bullet-list">
+                <li>系统虽然功能完整，但整体结构不够统一，跨模块使用体验割裂。</li>
+                <li>高净值客户与机构场景对信息准确性和任务效率要求很高。</li>
+                <li>如果不在平台层统一体验骨架，后续增长只会继续放大复杂度。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>关键动作</h2>
+              <ul class="bullet-list">
+                <li>建立统一页面骨架、导航逻辑与任务结构，提升跨模块一致性。</li>
+                <li>围绕交易下单、报表和任务场景重构关键流程，减少任务切换成本。</li>
+                <li>推动企业级 B 端组件库沉淀，提升跨模块复用率与开发效率。</li>
+                <li>让设计判断不只服务“当前页面”，而是服务整个平台的长期可扩展性。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>Figma 中明确呈现的系统内容</h2>
+              <ul class="bullet-list">
+                <li>权限体系：基于 RBAC 模型设计权限体系，支持 30+ 权限点灵活配置。</li>
+                <li>角色差异：管理员看全局、交易员看交易、风控看风险，不同角色看到不同界面。</li>
+                <li>敏感信息：资产总额脱敏、客户信息打码，提升权限与合规边界的清晰度。</li>
+                <li>权限拆分：操作权限与数据权限分离，能看不等于能操作。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>组件体系拆解</h2>
+              <ul class="bullet-list">
+                <li>交易类组件：下单面板、持仓列表、订单簿、委托明细、成交记录。</li>
+                <li>风控类组件：保证金监控、风险预警、强平提示、限额管理。</li>
+                <li>数据类组件：实时行情、K 线图、分时图、资产饼图、收益曲线。</li>
+                <li>表单类组件：金融专用表单，如金额输入、股数输入、价格输入。</li>
+                <li>合规类组件：风险揭示、适当性提示、合规确认、审批流程。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>我的判断依据</h2>
+              <ul class="evidence-list">
+                <li>平台型产品的主要风险通常不是某个页面不好看，而是结构不稳定带来的长期复杂度失控。</li>
+                <li>当模块数量和角色数量都增加时，不统一的交互骨架会直接转化为学习成本和协作成本。</li>
+                <li>组件库价值不在数量，而在是否真正承接了高频场景和跨模块复用需求。</li>
+              </ul>
+            </article>
+
+            <article class="article-section" data-reveal>
+              <h2>项目结果</h2>
+              <ul class="bullet-list">
+                <li>服务 50+ 家持牌金融机构。</li>
+                <li>覆盖 800+ 亿港元资产管理场景。</li>
+                <li>实现 85% 组件复用率，推动研发协作效率提升 40%。</li>
+              </ul>
+              <p>
+                这个项目最能体现我的平台型产品能力：我做的不是单页最优，而是系统层面的结构稳定和长期复用。
+              </p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>This case page is intended for direct sharing and interview walkthroughs.</p>
+      </footer>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
