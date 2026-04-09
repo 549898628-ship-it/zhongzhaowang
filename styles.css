@@ -657,6 +657,18 @@ a {
   text-align: center;
 }
 
+.site-footer p {
+  margin: 0;
+  font-size: 0;
+  color: transparent;
+}
+
+.site-footer p::before {
+  content: "dk@2026 copyroght.";
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
 .subpage-hero {
   padding: 92px 0 28px;
 }
