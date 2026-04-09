@@ -12,6 +12,35 @@ const observer = new IntersectionObserver(
   },
 );
 
+const initCaseGalleries = () => {
+  document.querySelectorAll("[data-case-gallery]").forEach((gallery) => {
+    const prefix = gallery.dataset.prefix;
+    const ext = gallery.dataset.ext || ".png";
+    const captionPrefix = gallery.dataset.captionPrefix || "Visual";
+    const altPrefix = gallery.dataset.altPrefix || "Case visual";
+    const start = Number(gallery.dataset.start || "1");
+    const end = Number(gallery.dataset.end || "1");
+
+    if (!prefix || Number.isNaN(start) || Number.isNaN(end) || end < start) return;
+
+    const figures = [];
+
+    for (let index = start; index <= end; index += 1) {
+      const label = String(index).padStart(2, "0");
+      figures.push(`
+        <figure class="figma-visual-card" data-ratio="wide" data-reveal>
+          <img src="${prefix}${label}${ext}" alt="${altPrefix} ${label}" loading="lazy" />
+          <figcaption>${captionPrefix} ${label}</figcaption>
+        </figure>
+      `);
+    }
+
+    gallery.innerHTML = figures.join("");
+  });
+};
+
+initCaseGalleries();
+
 document.querySelectorAll("[data-reveal]").forEach((element) => {
   observer.observe(element);
 });
